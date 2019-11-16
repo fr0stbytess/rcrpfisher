@@ -1,5 +1,5 @@
 # rcrpfisher
-A simple Red County Roleplay auto fishing script wrote in Python
+A simple Red County Roleplay auto fishing script wrote in Python. By default, after 5 tries it automatically stores all the fishes in your crate, then resets the tries variable to 5.
 
 # Requirements
 Python3
