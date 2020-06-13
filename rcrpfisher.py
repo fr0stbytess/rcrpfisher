@@ -2,16 +2,16 @@ import sys
 import time
 import pyautogui as fisher
 
-fishing = True
+fishing_status = True
 
 
-def Fishing():
+def fishing():
     tries = 5
     try:
-        while fishing:
+        while fishing_status:
             if tries == 0:
                 tries = 5
-                CollectFish()
+                collect_fish()
             fisher.press("T")
             fisher.typewrite("/fish")
             fisher.press("enter")
@@ -22,10 +22,9 @@ def Fishing():
         sys.exit()
         print("Stopped.")
 
-
-def CollectFish():
+def collect_fish():
     fisher.press("T")
     fisher.typewrite("/fcrate store all")  # stores fishes for peace
     fisher.press("enter")
 
-Fishing()
+fishing()
